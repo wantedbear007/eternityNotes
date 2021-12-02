@@ -3,7 +3,7 @@ const AboutContents = [
     id: 1,
     title: 'About Eternity Notes',
     detail:
-      'Eternity notes is a one step solution to synchronize all your ones across different devices. So that you can get your notes anytome anywhere.',
+      'Eternity notes is a one step solution to synchronize all your notes across different devices. So that you can get your notes anytime anywhere.',
     appVersion: 'App version: 1.0',
     feedback: 'WantedBear007@gmail.com',
   },
