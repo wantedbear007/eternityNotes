@@ -9,7 +9,7 @@ import {
 import Feather from 'react-native-vector-icons/Feather';
 import colors from '../../assets/Colors';
 
-export default Search = props => {
+export default Search = ({navigation}) => {
   return (
     <View style={styles.parentContainer}>
       <View style={styles.searchBar}>
@@ -18,7 +18,9 @@ export default Search = props => {
           <Text style={styles.searchText}>Search Notes</Text>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity style={styles.optionContainer}>
+      <TouchableOpacity
+        style={styles.optionContainer}
+        onPress={() => navigation.navigate('About')}>
         <Feather name="menu" size={23} color={colors.white} />
       </TouchableOpacity>
     </View>
