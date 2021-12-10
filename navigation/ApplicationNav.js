@@ -7,20 +7,17 @@ import Home from '../screens/Home';
 import About from '../screens/About';
 import Settings from '../screens/Settings';
 
-const ApplicationNav = () => {
-  const Stack = createNativeStackNavigator();
-
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="About"
-        screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="About" component={About} />
-        <Stack.Screen name="Settings" component={Settings} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-};
+const Stack = createNativeStackNavigator();
+const ApplicationNav = () => (
+  <NavigationContainer>
+    <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="About" component={About} />
+      <Stack.Screen name="Settings" component={Settings} />
+    </Stack.Navigator>
+  </NavigationContainer>
+);
 
 export default ApplicationNav;
